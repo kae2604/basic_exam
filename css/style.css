@@ -1000,5 +1000,15 @@ footer .footer_bottom .container ul li {
   line-height: 100%;
   color: #646464;
 }
+footer .footer_bottom .container ul li a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #646464;
+}
+footer .footer_bottom .container ul li a:hover {
+  color: #40a3f8;
+}
 
 /*# sourceMappingURL=style.css.map */

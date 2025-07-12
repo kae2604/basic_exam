@@ -8,10 +8,7 @@ $color_hover: #40a3f8;
 
 
 
-  //font-family: "Rubik", sans-serif;
-  //font-family: "Poppins", sans-serif;
-  //font-family: "Roboto", sans-serif;
-//font-family: "Ubuntu", sans-serif;
+
 
 
 
@@ -1028,7 +1025,7 @@ footer{
             color: #646464;
 
             &:hover{
-              color: #40a3f8;
+              color: $color_hover;
             }
           }
         }
@@ -1105,6 +1102,17 @@ footer{
           font-size: 14px;
           line-height: 100%;
           color: #646464;
+
+          a{
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #646464;
+            &:hover{
+              color: $color_hover;
+            }
+          }
         }
       }
     }
