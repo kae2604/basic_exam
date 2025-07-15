@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/mobile_menu.css">
 
 
 </head>
@@ -30,104 +30,158 @@
                 HEALTHCARE.
             </a>
 
-            <div class="header_right
-                        display_flex
-                        justify_content_between
-                        align_items_center">
-                <nav>
-                    <ul class="display_flex
+
+
+            <div id="menu">
+
+                    <div class="header_right
+                                display_flex
                                 justify_content_between
                                 align_items_center">
-                        <li>
-                            <a href="#" target="_blank">Home </a>
-                        </li>
+                        <nav>
+                            <ul class="display_flex
+                                        justify_content_between
+                                        align_items_center">
+                                <li>
+                                    <a href="#" target="_blank">Home </a>
+                                </li>
 
-                        <li>
-                            <a href="#" target="_blank">About</a>
-                        </li>
+                                <li>
+                                    <a href="#" target="_blank">About</a>
+                                </li>
 
-                        <li>
-                            <a href="#" target="_blank">Article</a>
-                        </li>
+                                <li>
+                                    <a href="#" target="_blank">Article</a>
+                                </li>
 
-                        <li>
-                            <a href="#" target="_blank">Services</a>
-                        </li>
-                    </ul>
-                </nav>
+                                <li>
+                                    <a href="#" target="_blank">Services</a>
+                                </li>
+                            </ul>
+                        </nav>
 
-                <div class="header_login">
-                    <a href="#" target="_blank">Get Started</a>
-                </div>
+                        <div id="logo" class="header_login">
+                            <a href="#" target="_blank">Get Started</a>
+                        </div>
+                    </div>
             </div>
+
+            <div id="toggle">
+                <input type="checkbox">
+                <span></span>
+            </div>
+
+
+
+
+
+            <!--            <div class="header_right-->
+<!--                        display_flex-->
+<!--                        justify_content_between-->
+<!--                        align_items_center">-->
+<!--                <nav>-->
+<!--                    <ul class="display_flex-->
+<!--                                justify_content_between-->
+<!--                                align_items_center">-->
+<!--                        <li>-->
+<!--                            <a href="#" target="_blank">Home </a>-->
+<!--                        </li>-->
+
+<!--                        <li>-->
+<!--                            <a href="#" target="_blank">About</a>-->
+<!--                        </li>-->
+
+<!--                        <li>-->
+<!--                            <a href="#" target="_blank">Article</a>-->
+<!--                        </li>-->
+
+<!--                        <li>-->
+<!--                            <a href="#" target="_blank">Services</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </nav>-->
+
+<!--                <div class="header_login">-->
+<!--                    <a href="#" target="_blank">Get Started</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </header>
 
     <main>
         <section class="banner">
-            <div class="container">
+            <div class="container
+                        display_flex
+                        justify_content_between">
 
-                <h1>Find And Search Your
-                    <span>Suitable Doctor’s</span>
-                </h1>
+                <div class="banner_left">
+                    <h1>Find And Search Your
+                        <span>Suitable Doctor’s</span>
+                    </h1>
 
-                <p>
-                    Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.
-                </p>
+                    <p>
+                        Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.
+                    </p>
 
-                <form class="display_flex
-                             justify_content_start
-                             align_items_center"
-                      name="doctor_search"
-                      method="post"
-                      action="#">
+                    <form class="display_flex
+                                 justify_content_start
+                                 align_items_center"
+                          name="doctor_search"
+                          method="post"
+                          action="#">
 
-                    <input type="text"
-                           name="doctor_name"
-                           placeholder="Find your doctor">
-                    
-                    <div class="banner_select">
-                        <select name="city">
-                            <option value="ny"> New York, USA </option>
-                            <option value="wa"> Washington, USA </option>
-                            <option value="la"> Los Angeles, USA</option>
-                            <option value="ch"> Chicago, USA</option>
-                            <option value="ho"> Houston, USA</option>
-                            <option value="pho"> Phoenix, USA</option>
-                            <option value="phi"> Philadelphia, USA</option>
-                        </select>
+                        <input type="text"
+                               name="doctor_name"
+                               placeholder="Find your doctor">
 
-                        <img src="images/banner_location.svg" alt="location logo" loading="lazy">
+                        <div class="banner_select">
+                            <select name="city">
+                                <option value="ny"> New York, USA </option>
+                                <option value="wa"> Washington, USA </option>
+                                <option value="la"> Los Angeles, USA</option>
+                                <option value="ch"> Chicago, USA</option>
+                                <option value="ho"> Houston, USA</option>
+                                <option value="pho"> Phoenix, USA</option>
+                                <option value="phi"> Philadelphia, USA</option>
+                            </select>
 
-                        <img src="images/banner_arrow_bl.svg" alt="arrow" loading="lazy">
+                            <img src="images/banner_location.svg" alt="location logo" loading="lazy">
+
+                            <img src="images/banner_arrow_bl.svg" alt="arrow" loading="lazy">
+                        </div>
+
+                        <button type="submit"></button>
+                    </form>
+                </div>
+
+                <div class="banner_right">
+
+                    <div class="banner_right_images">
+
+                        <img src="images/banner_doctor.png" alt="picture of doctor" loading="lazy">
+                        <img src="images/banner_back_shape.png" alt="picture of circle" loading="lazy">
+
+                        <a href="#" target="_blank">
+                            <img src="images/banner_video.png" alt="logo of video" loading="lazy">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/banner_patients.png" alt="logo of stars" loading="lazy">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/banner_reviews.png" alt="logo of heart" loading="lazy">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/banner_message.png" alt="logo of message" loading="lazy">
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <img src="images/banner_phone.png" alt="logo of phone" loading="lazy">
+                        </a>
                     </div>
-
-                    <button type="submit"></button>
-                </form>
-
-                <img src="images/banner_doctor.png" alt="picture of doctor" loading="lazy">
-                <img src="images/banner_back_shape.png">
-
-                <a href="#" target="_blank">
-                    <img src="images/banner_video.png" alt="logo of video" loading="lazy">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="images/banner_patients.png" alt="logo of stars" loading="lazy">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="images/banner_reviews.png" alt="logo of heart" loading="lazy">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="images/banner_message.png" alt="logo of message" loading="lazy">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="images/banner_phone.png" alt="logo of phone" loading="lazy">
-                </a>
-
+                </div>
             </div>
         </section>
 
@@ -169,9 +223,12 @@
         <section class="quality">
             <div class="container
                         display_flex
-                        justify_content_end
+                        justify_content_between
                         align_items_center">
-                <img src="images/quality_doctor.png" alt="picture of doctor" loading="lazy">
+
+                <div class="quality_left">
+                    <img src="images/quality_doctor.png" alt="picture of doctor" loading="lazy">
+                </div>
 
                 <div class="quality_right">
                     <h2>Best quality service with our experience
@@ -264,7 +321,7 @@
 
                 <div class="doctors_bottom
                             display_flex
-                            justify_content_between
+                            justify_content_center
                             align_items_center">
                     <div class="doctors_bottom_block
                                 text_align_center">
@@ -273,8 +330,8 @@
                         <h3>Dr Amanda Linda </h3>
 
                         <p>Dentist Specilist</p>
-                        
-                        <ul class="display_flex 
+
+                        <ul class="display_flex
                                    justify_content_center
                                    align_items_center">
                             <li>
@@ -394,9 +451,10 @@
                         display_flex
                         justify_content_end
                         align_items_center">
-                <img class="apps_phone" src="images/apps.png" alt="picture of doctor" loading="lazy">
 
-                <div class="apps_right ">
+                <img class="apps_left" src="images/apps.png" alt="picture of doctor" loading="lazy">
+
+                <div class="apps_right">
                     <h2>Mobile apps are available
                         Get HealthCare for free!
                     </h2>
@@ -475,13 +533,22 @@
         </section>
 
         <section class="book">
-            <div class="container">
-                <h2>It’s time change your life today</h2>
+            <div class="container
+                        display_flex
+                        justify_content_between">
 
-                <div class="book_button">
-                    <a href="#" target="_blank">Book an Appoinment </a>
+                <div class="book_left">
+                    <h2>It’s time change your life today</h2>
+
+                    <div class="book_button">
+                        <a href="#" target="_blank">Book an Appoinment </a>
+                    </div>
                 </div>
 
+                <img class="book_right"
+                     src="images/book_doctor.png"
+                     alt="picture of doctor"
+                     loading="lazy">
             </div>
         </section>
 
@@ -607,8 +674,10 @@
         </div>
 
         <div class="footer_bottom">
-            <div class="container display_flex
+            <div class="container
+                        display_flex
                         justify_content_between">
+
                 <p>© 2021 Healthcare - All rights reserved.</p>
                 <ul class="display_flex align_items_center">
                     <li>

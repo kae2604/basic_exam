@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) {
+  #toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    position: fixed;
+    z-index: 10;
+  }
+  header .container #menu {
+    background: #EEFAFF;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    transition: all 600ms ease-in-out;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 1;
+  }
+  header .container #menu.active {
+    top: 76px;
+  }
+  header .container #menu .header_right {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  header .container #menu .header_right nav ul {
+    flex-direction: column;
+    gap: 50px;
+  }
+  header .container #menu .header_right nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6e5f5f;
+    opacity: 0.6;
+  }
+  header .container #menu .header_right nav ul li a:hover {
+    color: #40a3f8;
+    opacity: 1;
+  }
+  header .container #menu .header_right .header_login {
+    background: #40a3f8;
+    border-radius: 5px;
+    border: 1px solid #40a3f8;
+  }
+  header .container #menu .header_right .header_login:hover {
+    border: 1px solid #6e5f5f;
+  }
+  header .container #menu .header_right .header_login a {
+    display: block;
+    padding: 12px 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 147%;
+    color: #fff;
+  }
+  header .container #toggle {
+    position: relative;
+    width: 40px;
+    height: 36px;
+    left: 0;
+    top: 5px;
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+  }
+  header .container #toggle input {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+  header .container #toggle input:checked + span {
+    background: transparent;
+    left: 0;
+  }
+  header .container #toggle input:checked + span:after {
+    transform: rotate(45deg) translate(-1px, -12px);
+    left: -7px;
+    background: #34495E;
+  }
+  header .container #toggle input:checked + span:before {
+    transform: rotate(-45deg) translate(-4px, 16px);
+    left: -7px;
+    background: #34495E;
+  }
+  header .container #toggle span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #34495E;
+    margin-top: 10px;
+    transition: all 0.1s;
+    left: 0;
+  }
+  header .container #toggle span:before, header .container #toggle span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #34495E;
+    top: -12px;
+    left: 0;
+    transition: all 0.3s;
+  }
+  header .container #toggle span:after {
+    top: 12px;
+  }
+}
+
+/*# sourceMappingURL=mobile_menu.css.map */
