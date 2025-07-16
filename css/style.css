@@ -77,6 +77,8 @@ header {
   background-color: #EEFAFF;
 }
 header .container .header_logo {
+  position: relative;
+  z-index: 10;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 31px;
