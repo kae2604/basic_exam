@@ -10,23 +10,25 @@
     z-index: 10;
   }
   header .container #menu {
-    background: greenyellow;
+    background: rgb(245, 246, 250);
     width: 100vw;
-    height: 100vh;
-    padding: 50px 0 0;
+    height: 0;
     transition: all 600ms ease-in-out;
     position: absolute;
-    bottom: 0;
+    top: 76px;
+    overflow: hidden;
     left: 0;
+    opacity: 0.97;
     z-index: 1;
   }
   header .container #menu.active {
-    bottom: -100vh;
+    height: 100vh;
   }
   header .container #menu .header_right {
-    flex-direction: column;
-    justify-content: space-around;
     height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
   }
   header .container #menu .header_right nav ul {
     flex-direction: column;
@@ -38,7 +40,7 @@
     font-size: 16px;
     line-height: 150%;
     color: #6e5f5f;
-    opacity: 0.6;
+    opacity: 0.9;
   }
   header .container #menu .header_right nav ul li a:hover {
     color: #40a3f8;

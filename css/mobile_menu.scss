@@ -4,6 +4,7 @@ $color-two: #ECF0F1;
 $color-three: #C0392D;
 $color-four: #2980D9;
 
+
 $color_hover: #40a3f8;
 
 
@@ -15,6 +16,7 @@ $color_hover: #40a3f8;
   }
 }
 
+
 @media screen and (max-width: 767px){
 
   header{
@@ -24,27 +26,25 @@ $color_hover: #40a3f8;
     .container{
       #menu {
         //background: #EEFAFF;
-        background: greenyellow;
+       background: rgba(245, 246, 250, 1);
         width: 100vw;
-        height: 100vh;
-        padding: 50px 0 0;
+        height: 0;
         transition: all 600ms ease-in-out;
         position: absolute;
-        //top: -100vh;
-        bottom: 0;
+        top: 76px;
+        overflow: hidden;
         left: 0;
-        //opacity: 0;
+        opacity: 0.97;
         z-index: 1;
         &.active {
-          //top: 76px;
-          bottom: -100vh;
-          //opacity: 1;
-
+          height: 100vh;
         }
         .header_right{
-          flex-direction: column;
-          justify-content: space-around;
           height: 100%;
+          flex-direction: column;
+          justify-content: space-evenly;
+          padding-bottom: 50px;
+
           nav {
             ul {
               flex-direction: column;
@@ -56,7 +56,7 @@ $color_hover: #40a3f8;
                   font-size: 16px;
                   line-height: 150%;
                   color: #6e5f5f;
-                  opacity: 0.6;
+                  opacity: 0.9;
                   &:hover {
                     color: $color_hover;
                     opacity: 1;
