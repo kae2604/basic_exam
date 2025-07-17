@@ -1125,6 +1125,7 @@ main{
         position: relative;
         @include max-screen(380px) {
           max-width: 300px;
+          height: 380px;
         }
 
         &:before {
