@@ -276,13 +276,36 @@ main{
             color: rgba(0, 0, 0, 0.3);
           }
         }
+
         .banner_select{
           margin-right: 31px;
           position: relative;
-          @include max-screen(620px){
-            width: 100%;
-            margin: auto;
+          &:before{
+            position: absolute;
+            left: 27px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 18px;
+            content: "";
+            background-image: url("../images/banner_location.svg");
+            background-repeat: no-repeat;
+            pointer-events: none;
           }
+
+          &:after{
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            content: "";
+            background-image: url("../images/banner_arrow_bl.svg");
+            background-repeat: no-repeat;
+            pointer-events: none;
+          }
+
           select{
             font-family: "Poppins", sans-serif;
             font-weight: 400;
@@ -292,7 +315,7 @@ main{
             border-radius: 8px;
             height: 59px;
             background: rgba(245, 246, 250, 0.52);
-            padding: 18px 50px;
+            padding: 18px 56px 18px 50px;
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -305,27 +328,35 @@ main{
               border: 1px solid  #6e5f5f;
             }
           }
-          img{
-            &:first-of-type{
-              width: 16px;
-              height: 16px;
-              position: absolute;
-              left: 27px;
-              top: 50%;
-              transform: translateY(-50%);
-              pointer-events: none;
-            }
-            &:nth-of-type(2){
-              width: 20px;
-              height: 20px;
-              position: absolute;
-              right: 30px;
-              top: 50%;
-              transform: translateY(-50%);
-              pointer-events: none;
-            }
-          }
         }
+
+
+
+
+
+
+
+        //img{
+        //  &:first-of-type{
+        //    width: 16px;
+        //    height: 16px;
+        //    position: absolute;
+        //    left: 27px;
+        //    top: 50%;
+        //    transform: translateY(-50%);
+        //    pointer-events: none;
+        //  }
+        //  &:nth-of-type(2){
+        //    width: 20px;
+        //    height: 20px;
+        //    position: absolute;
+        //    right: 30px;
+        //    top: 50%;
+        //    transform: translateY(-50%);
+        //    pointer-events: none;
+        //  }
+        //}
+
         button{
           border-radius: 8px;
           width: 70px;
@@ -1003,13 +1034,39 @@ main{
           gap: 12px;
           li{
             a{
-              img{
-                width: 31px;
-                height: 31px;
-                transition: 0.4s;
-                &:hover{
-                  transform: scale(130%);
-                }
+              display: inline-block;
+              width: 31px;
+              height: 31px;
+              border-radius: 50%;
+              transition: 0.4s;
+              &:hover{
+                transform: scale(130%);
+              }
+            }
+
+            &:first-of-type {
+              a {
+                background-color: #4D77CF;
+                background-image: url("../images/doctors_fb.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+            &:nth-of-type(2){
+              a{
+                background-color: #1da1f2;
+                background-image: url("../images/doctors_tw.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+            &:nth-of-type(3){
+              a{
+                background-color: #0077b5;
+                background-image: url("../images/doctors_ld.svg");
+                background-repeat: no-repeat;
+                background-position: center 6px;
+
               }
             }
           }
