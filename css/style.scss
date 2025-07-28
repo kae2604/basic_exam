@@ -413,10 +413,10 @@ main{
 
         img{
           &:first-of-type{
+            aspect-ratio: 430/630;
             max-width: 430px;
             width: 100%;
             height: auto;
-            aspect-ratio: 430/630;
             position: absolute;
             z-index: 1;
             bottom: 0;
@@ -430,6 +430,7 @@ main{
             }
           }
           &:nth-of-type(2){
+            aspect-ratio: 590/590;
             max-width: 587px;
             width: 100%;
             height: auto;
@@ -947,7 +948,6 @@ main{
         border-radius: 5px;
         background: #40a3f8;
         border: 1px solid  #40a3f8;
-        padding: 10px 18px;
         max-width: 205px;
         @include max-screen(1400px){
           display: block;
@@ -957,6 +957,7 @@ main{
           border: 1px solid  #6e5f5f;
         }
         a{
+          padding: 10px 18px;
           display: inline-flex;
           align-items: center;
           font-family: "Roboto", sans-serif;
@@ -998,12 +999,11 @@ main{
       line-height: 167%;
       letter-spacing: 0.02em;
       color: rgba(61, 61, 63, 0.7);
-      margin: auto;
-      margin-bottom: 75px;
+      margin: 0 auto 75px;
     }
     .service_bottom{
       .service_bottom_block {
-        margin: auto;
+        margin: 0 auto 92px;
         border: 1px solid #eeeff1;
         display: flex;
         flex-direction: column;
@@ -1015,7 +1015,6 @@ main{
         border-radius: 10px;
         background: white;
         transition: 1.5s;
-        margin-bottom: 92px;
 
         img {
           margin-bottom: 16px;
@@ -1102,7 +1101,7 @@ main{
       flex-direction: column;
       align-items: center;
       max-width: 514px;
-      margin: auto;
+      margin: 0 auto 69px;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       font-size: 18px;
@@ -1110,7 +1109,6 @@ main{
       letter-spacing: 0.02em;
       text-align: center;
       color: rgba(61, 61, 63, 0.7);
-      margin-bottom: 69px;
 
       &:before{
         content: "";
@@ -1218,12 +1216,14 @@ main{
       display: inline-block;
       background: #40a3f8;
       border-radius: 5px;
-      padding: 8px 22px;
+      margin: auto;
       border: 1px solid  #40a3f8;
       &:hover{
         border: 1px solid  #6e5f5f;
       }
       a{
+        display: block;
+        padding: 8px 22px;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 18px;
