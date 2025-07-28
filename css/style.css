@@ -363,7 +363,6 @@ main {
   }
 }
 .banner .container .banner_right .banner_right_images {
-  aspect-ratio: 430/630;
   max-height: 630px;
   max-width: 587px;
   width: 100%;
@@ -386,7 +385,6 @@ main {
   }
 }
 .banner .container .banner_right .banner_right_images img:first-of-type {
-  aspect-ratio: 430/630;
   max-width: 430px;
   width: 100%;
   height: auto;
@@ -407,7 +405,6 @@ main {
   }
 }
 .banner .container .banner_right .banner_right_images img:nth-of-type(2) {
-  aspect-ratio: 590/590;
   max-width: 587px;
   width: 100%;
   height: auto;
