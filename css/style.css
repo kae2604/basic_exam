@@ -764,6 +764,8 @@ main {
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
+  background-size: contain;
+  z-index: 3;
 }
 .quality .container .quality_left .quality_left_block p {
   font-family: "Poppins", sans-serif;
